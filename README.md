@@ -38,7 +38,8 @@ A StandardOrder and SpecialOrder class inherit from the Order class.
 SpecialOrder overrides the processOrder() method to throw an exception in some cases, breaking the substitutability of SpecialOrder in place of Order.
 
 Refactored Scenario:
-Both StandardOrder and SpecialOrder implement the Order interface. Specific behavior is encapsulated, ensuring substitutability.
+Both StandardOrder and SpecialOrder implement the Order interface.
+Specific behavior is encapsulated, ensuring substitutability.
 
 2. Open Closed Principle (OCP):
 
@@ -47,7 +48,8 @@ The DiscountCalculator class uses an if-else structure to calculate discounts fo
 Adding a new order type requires modifying the DiscountCalculator class.
 
 Refactored Scenario:
-Introduce a DiscountStrategy interface and create separate classes for each order type. The DiscountCalculator uses the strategy pattern to calculate discounts without modification.
+Introduce a DiscountStrategy interface and create separate classes for each order type.
+The DiscountCalculator uses the strategy pattern to calculate discounts without modification.
 
 3. Single Responsibility Principle (SRP):
 
